@@ -6,3 +6,18 @@
 
 # {'А': ['Алина'], 'Б': ['Бибочка'], 'И': ['Иван', 'Илья'], 'М': ['Марина', 'Мария'], 'П': ['Петр', 'Петр']}
 
+name_list = input("Введите спискок имён: ")
+print (name_list.split())
+name_list = "Иван", "Мария", "Петр", "Илья", "Марина", "Петр", "Алина", "Бибочка"
+print(name_list)
+
+name_dict = {}
+
+for name in name_list:
+    key = name[0]
+
+    if key not in name_dict:
+        name_dict[key] = []
+    name_dict[key].append(name)
+
+print (name_dict)
